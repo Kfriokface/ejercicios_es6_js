@@ -35,7 +35,6 @@ console.log('\n--> Ejercicio 3');
 console.log(name);
 console.log(race);
 
-
 // 1.4 En base al siguiente javascript, usa destructuring para crear las 
 // variables name y itv con sus respectivos valores. Posteriormente crea 
 // 3 variables usando igualmente el destructuring para cada uno de los años y comprueba que todo esta bien imprimiendolo.
