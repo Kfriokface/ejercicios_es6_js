@@ -6,5 +6,28 @@ const streamers = [
 	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
 ];
 
-const input = document.querySelector('body');
-console.log(input);
+const toFilterStreamers = (inputValue) => {
+	const filtered = streamers.filter(streamer => streamer.name.toLowerCase().includes(inputValue));
+	if (filtered.length > 0) {
+		const names = [];
+	  filtered.forEach(streamer => {
+			names.push(streamer.name);
+		});
+		return names;
+	} else {
+    return "Lo sentimos. No hay resultados para ese valor";
+	}
+};
+
+const input = document.querySelector('input');
+const filtrarBtn = document.querySelector('#filtrarBtn');
+filtrarBtn.addEventListener('click', (e) => {
+	e.preventDefault();
+	console.log(toFilterStreamers(input.value.toLowerCase()));
+});
+
+
+
+
+
+

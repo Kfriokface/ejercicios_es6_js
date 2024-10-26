@@ -39,8 +39,8 @@ const oldestStreamers = streamers.filter(streamer =>
     if (streamer.age > 35) {
       return {...streamer, gameMorePlayed: streamer.gameMorePlayed.toUpperCase() };
     }
-    return streamer;
-  });
+  return streamer;
+});
 
-  console.log('\n--> Ejercicio 4.5');
-  console.log(oldestStreamers);
+console.log('\n--> Ejercicio 4.5');
+console.log(oldestStreamers);
